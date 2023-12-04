@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>ReGrow</title>
+  <link rel="icon" href="img/regrow-logo.png">
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/responsive.css">
+  <link rel="stylesheet" href="styles/jual.css">
+
+  <style>
+    body {
+      height: auto;
+      background: #F8F8FA;
+    }
+
+    .location {
+      background-color: #C9EC71;
+    }
+
+    #myTopnav {
+      box-shadow: none;
+      border-bottom: none;
+      background-color: unset
+    }
+
+    .topnav a {
+      color: #000
+    }
+
+    #txt,
+    #txt1,
+    #txt2,
+    #txt3 {
+      color: #000
+    }
+
+    .btn-jual,
+    .btn-cancel {
+      padding: 0 5%;
+      font-size: 0.8rem
+    }
+
+    .btn-cancel {
+      margin-left: 0;
+      background: #2096a2;
+    }
+
+    .btn-cancel:hover {
+      border: 1px solid #2096a2;
+      color: #2096a2;
+      background: transparent
+    }
+
+    @media only screen and (max-width: 1260px) {
+
+      .btn-jual,
+      .btn-cancel {
+        padding: 0 10%;
+        font-size: 1rem;
+        height: 40px;
+        line-height: 40px;
+      }
+    }
+
+    @media only screen and (max-width: 960px) {
+
+      .btn-jual,
+      .btn-cancel {
+        width: 70%;
+        margin-left: 0;
+        padding: 0 10%;
+        font-size: 1rem;
+        margin-top: 1em;
+        height: 45px;
+        line-height: 45px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <div class="topnav" id="myTopnav">
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <svg width="23" height="20">
+        <path d="M0,5 22,5" stroke="#000" stroke-width="3" />
+        <path d="M4,11 22,11" stroke="#000" stroke-width="3" />
+        <path d="M8,17 22,17" stroke="#000" stroke-width="3" />
+      </svg>
+    </a>
+    <img src="img/logo-2.svg" id="logo">
+    <div class="nav-menu">
+      <a href="home.html">Beranda</a>
+      <a style="color: #AAD758">Jual Sampah</a>
+      <a href="arkel.html">Artikel</a>
+      <a href="keranjang.html">Shop</a>
+    </div>
+  </div>
+
+  <!-- FormContent -->
+  <div class="section-jual">
+    <!-- OnStep -->
+    <div class="progress-jual">
+      <div class="icon-progress">
+        <div class="location" style="background-image: url('img/icon/location.png'); border: 3px solid #94BC2F;"></div>
+        <div class="account" style="background-image: url('img/icon/account-disable.png')"></div>
+        <div class="apply" style="background-image: url('img/icon/apply-disable.png')"></div>
+        <div class="score" style="background-image: url('img/icon/score-disable.png')"></div>
+      </div>
+      <img src="img/vector-location.png" class="img-vector">
+      <h1>Tentukan Lokasimu</h1>
+      <p>
+        Tentukan alamat-mu untuk membantu kami menemukan keberadaanmu
+        lebih cepat
+      </p>
+      <div style="text-align: center;">
+        <a class="btn-jual" href="sell-step2.html">Selanjutnya</a>
+        <a href="harga.html" class="btn-cancel">Info Harga</a>
+      </div>
+    </div>
+
+    <!-- FormContent -->
+    <div class="form-jual">
+      <div class="alert-jual">
+        <img src="img/icon/alert.png">
+        <a>
+          Masukkan destinasi tempat pengambilan sampah selengkap mungkin
+          untuk mempermudah petugas kami dalam menemukan lokasi anda.
+        </a>
+      </div>
+      <label>Kecamatan</label>
+      <select class="select-jual">
+        <option selected disabled value="">Pilih Kecamatan</option>
+        <option value="">Pakembaran</option>
+        <option value="">Kalisapu</option>
+        <option value="">Dukuhwringin</option>
+        <option value="">Dukuhsalam</option>
+        <option value="">Pangkah</option>
+        <option value="">Slawi Wetan</option>
+        <option value="">Procot</option>
+        <option value="">Kudaile</option>
+      </select>
+ 
+      <br>
+      <label>Alamat Lengkap</label>
+      <textarea class="textarea-jual" cols="30" rows="10"></textarea>
+      <br>
+      <label>Pilih Waktu Layanan/Pengambilan</label>
+      <input type="date" class="date-jual">
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer" id="tentang">
+    <div class="section-footer">
+      <div class="content-footer">
+        <div class="about-footer column-footer">
+          <img class="img-footer" src="img/tulo.png" alt="">
+          <p class="field-footer">
+            ReGrow merupakan aplikasi berbasis web yang bertujuan untuk membantu
+            masyarakat Indonesia dalam mengolah sampah-nya.
+          </p>
+        </div>
+        <div class="column-footer">
+          <p class="title-link">Navigasi</p>
+          <p class="child-link"><a href="#beranda">Beranda</a></p>
+          <p class="child-link"><a href="jual.html">Jual Sampah</a></p>
+          <p class="child-link"><a href="blog.html">Artikel</a></p>
+          <p class="child-link"><a href="login.html">Login</a></p>
+        </div>
+        <div class="column-footer">
+          <p class="title-link" style="text-transform: uppercase"><b>Lainnya</b></p>
+          <p class="child-link"><a href="tentang.html">Tentang</a></p>
+          <p class="child-link"><a href="login.html">Sign In</a></p>
+          <p class="child-link"><a href="signup.html">Sign Up</a></p>
+        </div>
+        <div class="contact-footer">
+          <p class="title-link" style="text-transform: uppercase; text-align: left"><b>Kontak & Informasi</b>
+          </p>
+          <p class="contact-footfield">
+            Jl. Dr Cipto Mangunkusumo No 30 Rt 05 Rw 01
+            Desa Dukuhsalam Kec. Slawi Kab. Tegal 
+            <br><br>
+            Email : subwaypu22@gmail.com
+            <br>
+            Telepon : 0878 1194 4678
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+<!-- Script -->
+<script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+</script>
+
+</html>
